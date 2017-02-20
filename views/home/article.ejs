@@ -1,0 +1,46 @@
+<%include partial/head.ejs %>
+<%include partial/header.ejs %>
+<body>
+	<div class="article">
+		<div class="blog">
+			<header class="blog-header">
+				<div class="container-fluid">
+					<time class="pull-right"><%= data.wmdy %></time>
+					<h3><%= data.title %></h3>
+					<aside>
+						<div class="nav-box">
+							<ul class="nav sidenav">
+								<li>
+									<a href="" class="item">左侧导航</a>
+								</li>
+								<li>
+									<a href="" class="item">左侧导航</a>
+								</li>
+								<li>
+									<a href="" class="item">左侧导航</a>
+								</li>
+								<li>
+									<a href="" class="item">左侧导航</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+					<p class="tag-list">
+						<% for(var i = 0; i<data.tag.length; i++){ %>
+						<a href="" class="tags"><%= data.tag[i] %></a>
+						<% } %>
+					</p>
+				</div>
+			</header>
+			<div class="container-fluid">
+			<script type="text/javascript" src="/js/markdown.min.js"></script>
+				<div class="content">
+					<article id="md"><%= data.content %></article>
+				</div>
+				<script type="text/javascript">
+					$('#md').html(markdown.toHTML($('#md').html()));
+				</script>
+			</div>
+		</div>
+	</div>
+<%include partial/foot.ejs %>
