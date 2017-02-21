@@ -1,2 +1,3 @@
-# blog
-node.js+express+mongodb搭建个人博客
+# 介绍
+
+Node.js + express + MongoDB搭建个人博客
