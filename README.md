@@ -44,11 +44,11 @@
 
 (5)前台页面入口 `http://localhost:3000`
 
-# 教程
+# 教程(整理中。。。)
 
 ### 一、项目分析
 
-![](E:\思维导图\Node.js\blog.png)
+![image](https://github.com/zhangxiongcn/blog/raw/master/blog1.png)
 
 ### 二、项目构建
 
@@ -70,7 +70,7 @@
 
 * 根据需求分析，完善项目结构如下
 
-![](E:\思维导图\Node.js\blog2.png)
+![image](https://github.com/zhangxiongcn/blog/raw/master/blog2.png)
 
 ### 三、路由实现
 
